@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  position: sticky;
+  margin: 0;
+  font-size: 5em;
+  padding: 500px 0;
+  color: lightseagreen;
+  text-align: center;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/carbon_fibre.png");
+}
+
+.intro {
+  color: lightseagreen;
+  background-color: black;
+  padding: 50px;
+  text-align: center;
+  border: 2px solid black;
+  margin: 0;
+}
+
+.more {
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+  display: none;
+  background-color: black;
+  font-size: large;
+  color: white;
+  margin: 0;
+  font-size: 25px;
+}
+
+.elon {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: lightseagreen;
+  font-size: 25px;
+  background-color: black;
+}
+
+figure {
+  background-color: black;
+  padding: 15px;
+  margin: 0;
+}
