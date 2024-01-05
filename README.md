@@ -11,6 +11,7 @@
 
 ### Website Preview
 
+<!--
 #### Home Page
 
 <img src="website_images/HomePage.gif" width="900">
@@ -24,7 +25,7 @@
 <img src="website_images/ProjectPage.png" width="900">
 
 
-:star: Star me on GitHub — it helps!
+:star: Star me on GitHub — it helps! -->
 
 ## Features 📋
 
