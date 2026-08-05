@@ -20,9 +20,15 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Personal Portfolio</title>
-    <meta content="" name="descriptison" />
-    <meta content="" name="keywords" />
+    <title>Advait Mannepalli</title>
+    <meta
+      content="Advait Mannepalli — CS and Minecraft nerd at UT Austin, full-stack developer with experience in web development, search, and systems programming."
+      name="description"
+    />
+    <meta
+      content="Advait Mannepalli, systems engineer, UT Austin, computer science, web developer, portfolio"
+      name="keywords"
+    />
 
     <!-- Google Fonts -->
     <link
@@ -46,6 +52,20 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      .skill-pill {
+        display: inline-block;
+        background: rgba(18, 214, 64, 0.12);
+        color: #4ee883;
+        border: 1px solid rgba(18, 214, 64, 0.35);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 16px;
+        margin: 4px 6px 4px 0;
+        border-radius: 20px;
+      }
+    </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -84,6 +104,17 @@
     <!-- ======= Header ======= -->
     <header id="header" class="header-tops">
       <div class="container">
+        <img
+          src="assets/img/avatar.png"
+          alt="Advait's avatar"
+          style="
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: block;
+            margin-bottom: 10px;
+          "
+        />
         <h1><a href="index.html">Advait Mannepalli</a></h1>
         <h2 style="color: #fff">
           I'm a <span class="typing" style="color: #12d640"></span>
@@ -111,7 +142,7 @@
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1I3l_QBuDEsP4zSSV3DXKsc5VLkivFZwY/view?usp=drive_link"
+                href="https://docs.google.com/document/d/1Ml2fFTfaFgCw_pr72pTW9juF541L7ltT-j7mOTINrB4/edit?usp=sharing"
                 target="_blank"
               >
                 <span>Resume</span></a
@@ -127,7 +158,7 @@
 
         <div class="social-links">
           <a
-            href="https://www.linkedin.com/in/advaitmannepalli"
+            href="https://www.linkedin.com/in/advait-mannepalli-20797a28b/"
             target="_blank"
             class="linkedin"
             ><i class="bx bxl-linkedin"></i
@@ -154,40 +185,60 @@
       <!-- ======= About Me ======= -->
       <div class="about-me container">
         <div class="section-title">
-          <h2>About</h2>
+          <h2>Woah its me</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile.jpeg" class="img-fluid" alt="" />
+            <div
+              style="
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+                border-radius: 8px;
+              "
+            >
+              <img
+                src="assets/img/graduation.jpg"
+                class="img-fluid"
+                alt="Advait at his high school graduation"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center 25%;
+                "
+              />
+            </div>
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <p>
-              Focused and enthusiastic developer with a keen interest in web
-              development. I have been building websites for the past 3-4 years
-              at this point, and have developed a solid foundation in HTML and
-              CSS. I have also learned how to utilize Javascript code in my
-              sites. I am a passionate individual who thrives to learn new
-              concepts and am ready for any challenges.
+              CS and Minecraft nerd at The University of Texas at Austin with
+              interests in backend engineering, systems programming,
+              information retrieval, machine learning, operating systems, and
+              computer architecture. I've shipped production sites
+              end-to-end — from frontend UI and backend APIs to hosting, DNS,
+              and SEO — and I'm currently learning Rust and digging into
+              hybrid search.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <!-- <li>
+                  <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>Birthday:</strong> Jan 1 3000
+                    <strong>School:</strong> UT Austin, B.S. Computer Science
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>Phone:</strong> +1 999-999-9999
-                  </li> -->
+                    <strong>Phone:</strong> 916-257-5104
+                  </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li>
                     <i class="icofont-rounded-right"></i>
-                    <strong>City:</strong> Pflugerville, TX
+                    <strong>City:</strong> Austin, TX
                   </li>
                   <li>
                     <i class="icofont-rounded-right"></i>
@@ -204,65 +255,51 @@
       <!-- ======= Interests ======= -->
       <div class="interests container">
         <div class="section-title">
-          <h2>Interests</h2>
+          <h2>Cool things im learning about</h2>
         </div>
 
         <div class="row">
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="icon-box">
-              <!-- <i class="ri-global-line" style="color: #ffbb2c"></i> -->
-              <h3>Web Development</h3>
+              <i class="ri-server-line" style="color: #5578ff"></i>
+              <h3>Backend Software Engineering</h3>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
-              <!-- <i class="ri-database-2-line" style="color: #5578ff"></i> -->
-              <h3>Python Games</h3>
+              <i class="ri-terminal-box-line" style="color: #1c7d32"></i>
+              <h3>Systems Programming</h3>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="icon-box">
-              <!-- <i class="ri-camera-3-line" style="color: #e80368"></i> -->
-              <h3>Mathematics</h3>
+              <i class="ri-search-line" style="color: #ffbb2c"></i>
+              <h3>Information Retrieval</h3>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="col-lg-4 col-md-6 mt-4">
             <div class="icon-box">
-              <!-- <i class="ri-english-input" style="color: #1c7d32"></i> -->
-              <h3>Video Games</h3>
+              <i class="ri-robot-line" style="color: #e80368"></i>
+              <h3>Machine Learning</h3>
             </div>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
+          <div class="col-lg-4 col-md-6 mt-4">
             <div class="icon-box">
-              <i class="ri-code-s-slash-fill" style="color: #28a745"></i>
-              <h3>Software Engineering</h3>
+              <i class="ri-computer-line" style="color: #47aeff"></i>
+              <h3>Operating Systems</h3>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 mt-4">
+          <div class="col-lg-4 col-md-6 mt-4">
             <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #f1081f"></i>
-              <h3>Visualization</h3>
+              <i class="ri-cpu-line" style="color: #ffc107"></i>
+              <h3>Computer Architecture</h3>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #47aeff"></i>
-              <h3>Algorithms</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-image-line" style="color: #ffc107"></i>
-              <h3>Image Processing</h3>
-            </div>
-          </div> -->
         </div>
       </div>
       <!-- End Interests -->
@@ -273,37 +310,63 @@
     <section id="education" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>Education</h2>
+          <h2>I studied here</h2>
         </div>
         <div class="row">
           <div
             class="col-lg-12"
             data-aos="fade-up"
-            style="display: inline-block"
+            style="display: flex; flex-wrap: wrap; gap: 30px"
           >
             <div
-              class="col-md-4 mt-4 mt-md-0 icon-box"
+              class="icon-box"
               data-aos="fade-up"
               data-aos-delay="100"
-              style="
-                padding: 0px 0px;
-                padding-bottom: 5px;
-                display: inline-block;
-              "
+              style="padding: 15px 20px; flex: 1 1 380px; max-width: 460px"
+            >
+              <img
+                src="assets/img/education/ut-longhorn.png"
+                alt="University of Texas at Austin logo"
+                style="
+                  width: 340px;
+                  height: 191px;
+                  object-fit: contain;
+                  object-position: left center;
+                "
+              />
+              <p style="text-align: left; color: #fff; padding: 10px 0 0">
+                <em>The University of Texas at Austin</em>
+              </p>
+              <h5 style="text-align: left; padding: 0px">
+                B.S. Computer Science &middot; May 2029
+              </h5>
+              <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                Relevant Coursework
+              </h6>
+              <ul style="text-align: left; color: #fff">
+                <li>Data Structures</li>
+                <li>Computer Organization and Architecture</li>
+                <li>Linear Algebra</li>
+                <li>Statistics</li>
+                <li>Discrete Mathematics</li>
+              </ul>
+            </div>
+            <div
+              class="icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="padding: 15px 20px; flex: 1 1 380px; max-width: 460px"
             >
               <img
                 src="assets/img/education/HHS.png"
-                class="img-fluid"
-                alt=""
+                alt="Hendrickson High School logo"
+                style="width: 240px; height: 240px; object-fit: contain"
               />
-              <!-- <h4 style="text-align:left;"><a href="https://www.pfisd.net/Domain/10" target="_blank" style="color:#12d640">Hendrickson High School</a><br> </h4> -->
-              <p style="text-align: left; color: #fff; padding: 5px 10px">
-                <em>High School</em>
+              <p style="text-align: left; color: #fff; padding: 10px 0 0">
+                <em>Hendrickson High School</em>
               </p>
-              <h5 style="text-align: left; padding: 0px 10px">
-                2021 - Present
-              </h5>
-              <h6 style="text-align: left; color: #fff; padding: 0px 10px">
+              <h5 style="text-align: left; padding: 0px">2021 - 2025</h5>
+              <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
                 Relevant Coursework
               </h6>
               <ul style="text-align: left; color: #fff">
@@ -312,193 +375,6 @@
                 <li>Principles of Engineering</li>
               </ul>
             </div>
-            <div
-              class="col-md-4 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              style="
-                padding: 0px 0px;
-                padding-bottom: 5px;
-                display: inline-block;
-              "
-            >
-              <img
-                src="assets/img/education/FMS.png"
-                class="img-fluid"
-                alt=""
-              />
-              <!-- <h4 style="text-align:left;"><a href="https://www.fcusd.org/fms" target="_blank" style="color:#12d640">Folsom Middle School</a><br> </h4> -->
-              <p style="text-align: left; color: #fff; padding: 5px 10px">
-                <em>Middle School</em>
-              </p>
-              <h5 style="text-align: left; padding: 0px 10px">2019 - 2021</h5>
-              <h6 style="text-align: left; color: #fff; padding: 0px 10px">
-                Relevant Coursework
-              </h6>
-              <ul style="text-align: left; color: #fff">
-                <!-- <li>Data Structures &amp; Algorithms</li> -->
-                <li>Advanced Math</li>
-                <li>Science</li>
-                <li>English</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio">
-        <div class="container">
-          <div class="section-title">
-            <h2>Certifications</h2>
-          </div>
-
-          <div
-            class="row portfolio-container"
-            style="position: relative; height: 437.75px"
-          >
-            <div
-              class="col-lg-4 col-md-6 portfolio-item filter-app"
-              style="position: absolute; left: 0px; top: 0px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="https://i.ytimg.com/vi/SfKlNLkG_38/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAF_uuB2TqWBQ2bxkiCE6cr96SYmA"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Calculus</h4>
-                  <!-- <div class="portfolio-links">
-                    <a
-                      href="https://www.coursera.org/account/accomplishments/certificate/2BTJ636Q2E93?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 portfolio-item filter-app"
-              style="position: absolute; left: 370px; top: 0px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="https://www.industriousteacher.com/uploads/1/2/0/2/120212370/img-6603_3.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Java Programming</h4>
-                  <!-- <div class="portfolio-links">
-                    <a
-                      href="https://www.coursera.org/account/accomplishments/certificate/6THRQXYE9EHZ?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 portfolio-item filter-app"
-              style="position: absolute; left: 740px; top: 0px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="https://akinsechs.austinschools.org/sites/akinsechs.austinschools.org/files/inline-images/Screen%20Shot%202022-09-16%20at%203.51.19%20PM.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Mathematics in Engineering</h4>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://coursera.org/share/98bbfb990484fac370d5e5ed14334ea4"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div
-              class="col-lg-4 col-md-6 portfolio-item filter-project"
-              style="position: absolute; left: 0px; top: 218.875px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/certification/ibm.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Deep Learning with Tensorflow</h4>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://drive.google.com/file/d/1FSwPt19EzY_tpvqkE6igtLf3gccKcssC/view?usp=sharing"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 portfolio-item filter-project"
-              style="position: absolute; left: 370px; top: 218.875px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/certification/ibm.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Machine Learning with Python</h4>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://drive.google.com/file/d/1gimySw_NPzCJ54dqZ2j2wYyz-JDOg-S0/view?usp=sharing"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 portfolio-item filter-project"
-              style="position: absolute; left: 740px; top: 218.875px"
-            >
-              <div class="portfolio-wrap">
-                <img
-                  src="assets/img/certification/dai.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Neural Networks and Deep Learning</h4>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://www.coursera.org/account/accomplishments/certificate/ELXZ6FE2BU7X?utm_medium=certificate&amp;utm_source=link&amp;utm_campaign=copybutton_certificate/"
-                      target="_blank"
-                      title="Certificate"
-                      ><i class="bx bx-link"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -510,7 +386,7 @@
     <section id="experience" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>Experience</h2>
+          <h2>Cool stuff I did</h2>
         </div>
         <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
@@ -519,147 +395,300 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h4 style="text-align: left">
-                <a href="https://www.asu.edu/" style="color: #12d640"
-                  >Business Professionals of America</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">September 2022 - January 2023</h5>
-              <p style="text-align: left; color: #fff">
-                <em>Used Car Website</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Worked with a team of four to create and deploy a website that
-                  about a hypothetical used car site. .
-                </li>
-                <li>
-                  Utilized and adapted ourtside Javascript code to create an
-                  interactive browsing experience.
-                </li>
-                <li>
-                  Utliized knowledge of color schemes and CSS to create an
-                  aesthetically pleasing site.
-                </li>
-              </ul>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 24px;
+                  align-items: flex-start;
+                "
+              >
+                <div style="flex: 1 1 320px">
+                  <h4 style="text-align: left">
+                    <a
+                      href="https://1on1truckacademy.com"
+                      target="_blank"
+                      style="color: #12d640"
+                      >1 on 1 Truck Academy</a
+                    ><br />
+                  </h4>
+                  <h5 style="text-align: left">December 2024 - July 2026</h5>
+                  <p style="text-align: left; color: #fff">
+                    <em>Web Developer (Remote)</em>
+                  </p>
+                  <ul style="text-align: left">
+                    <li>
+                      Rebuilt and deployed the company website as a custom
+                      Vue.js application, replacing WordPress and
+                      consistently achieving 100 Lighthouse scores in
+                      accessibility, best practices, and SEO.
+                    </li>
+                    <li>
+                      Managed the end-to-end website migration, including
+                      frontend development, content transfer, hosting, domain
+                      and DNS configuration, analytics, lead-generation
+                      forms, redirects, and production deployment.
+                    </li>
+                    <li>
+                      Implemented technical, local, and on-page SEO across 18
+                      indexed pages, contributing to 6.45K Google Search
+                      impressions and top organic visibility for "West
+                      Sacramento truck driving school."
+                    </li>
+                  </ul>
+                </div>
+                <div style="flex: 0 0 300px; max-width: 100%">
+                  <img
+                    src="assets/img/experience/1on1-logo.jpg"
+                    class="img-fluid"
+                    alt="1 on 1 Truck Academy logo"
+                    style="border-radius: 8px"
+                  />
+                </div>
+              </div>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h4 style="text-align: left">
-                <a href="https://www.augmenify.com/" style="color: #12d640"
-                  >Business Professionals of America</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">October 2023 - January 2024</h5>
-              <p style="text-align: left; color: #fff">
-                <em>Game Day Grill</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Created a website for a hypothetical grilling company by the
-                  name Game Day Grill.
-                </li>
-                <li>
-                  Utilized Javascript to implement online payment systems and
-                  clean animations for a visually aesthetically pleasing
-                  experience.
-                </li>
-                <li>
-                  <em
-                    >Largest project done so far, highlight of this
-                    portfolio.</em
-                  >
-                </li>
-                <li>
-                  Presentation with video:
-                  https://docs.google.com/presentation/d/1quHucdI18kWN52rh_A6nRmL9UdcyWMLtfgk3ZEHoZ90/edit?usp=sharing
-                </li>
-              </ul>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 24px;
+                  align-items: flex-start;
+                "
+              >
+                <div style="flex: 1 1 320px">
+                  <h4 style="text-align: left">
+                    <span style="color: #12d640">Ranger SNF</span><br />
+                  </h4>
+                  <h5 style="text-align: left">July 2024 - November 2024</h5>
+                  <p style="text-align: left; color: #fff">
+                    <em>Software Developer (Remote)</em>
+                  </p>
+                  <ul style="text-align: left">
+                    <li>
+                      Developed Vue-based administrative dashboards that
+                      retrieved and displayed operational data from
+                      PostgreSQL-backed Sanic APIs.
+                    </li>
+                    <li>
+                      Implemented responsive interface components and
+                      integrated frontend workflows with backend endpoints
+                      for creating, viewing, or updating administrative
+                      records.
+                    </li>
+                  </ul>
+                </div>
+                <div style="flex: 0 0 300px; max-width: 100%">
+                  <img
+                    src="https://rangersnf.com/wp-content/uploads/2026/07/Ranger-SNF-Featured-Image.png"
+                    class="img-fluid"
+                    alt="Ranger SNF logo"
+                    style="border-radius: 8px; background: #fff"
+                  />
+                </div>
+              </div>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h4 style="text-align: left">
-                <a
-                  href="https://www.epitomesolutions.in/"
-                  style="color: #12d640"
-                  >BPA SQL</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">September 2022 - Present Day</h5>
-              <p style="text-align: left; color: #fff">
-                <em>SQL Competition</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Studied and took test on SQL, placed first in regionals and
-                  6th in State. Read up on mutliple books, and currenlty reading
-                  another SQL guide right now.
-                </li>
-              </ul>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 24px;
+                  align-items: flex-start;
+                "
+              >
+                <div style="flex: 1 1 320px">
+                  <h4 style="text-align: left">
+                    <span style="color: #12d640">A+ Federal Credit Union</span
+                    ><br />
+                  </h4>
+                  <h5 style="text-align: left">July 2024 - August 2024</h5>
+                  <p style="text-align: left; color: #fff">
+                    <em>HS Intern &middot; Pflugerville, TX</em>
+                  </p>
+                  <ul style="text-align: left">
+                    <li>
+                      Assisted members with financial services including
+                      savings, checking, and debit card support.
+                    </li>
+                    <li>
+                      Promoted financial literacy programs and provided
+                      guidance on available banking services.
+                    </li>
+                  </ul>
+                </div>
+                <div style="flex: 0 0 300px; max-width: 100%">
+                  <img
+                    src="assets/img/experience/aplus-fcu-logo.svg"
+                    class="img-fluid"
+                    alt="A+ Federal Credit Union logo"
+                    style="
+                      border-radius: 8px;
+                      background: #fff;
+                      padding: 20px;
+                    "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: 40px">
+        <div class="section-title">
+          <h2>Coll unpaid stuff I did in highschool</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div
+              class="col-md-12 mt-4 mt-md-0 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 24px;
+                  align-items: flex-start;
+                "
+              >
+                <div style="flex: 1 1 320px">
+                  <h4 style="text-align: left">
+                    <span style="color: #12d640"
+                      >Business Professionals of America</span
+                    ><br />
+                  </h4>
+                  <h5 style="text-align: left">
+                    August 2022 - May 2025
+                  </h5>
+                  <p style="text-align: left; color: #fff">
+                    <em>Secretary &middot; Competitions &amp; Projects</em>
+                  </p>
+
+                  <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                    Secretary &middot; August 2022 - May 2025
+                  </h6>
+                  <ul style="text-align: left">
+                    <li>
+                      Served as chapter Secretary, maintaining records and
+                      coordinating logistics for regional and state
+                      competitions.
+                    </li>
+                  </ul>
+
+                  <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                    SQL Competition &middot; September 2022 - May 2024
+                  </h6>
+                  <ul style="text-align: left">
+                    <li>
+                      Studied and tested on SQL, placing 1st in Regionals and
+                      6th in State.
+                    </li>
+                  </ul>
+
+                  <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                    Used Car Website &middot; September 2022 - January 2023
+                  </h6>
+                  <ul style="text-align: left">
+                    <li>
+                      Worked with a team of four to design and deploy a
+                      website for a hypothetical used car dealership.
+                    </li>
+                    <li>
+                      Adapted outside JavaScript code to build an interactive
+                      browsing experience.
+                    </li>
+                  </ul>
+
+                  <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                    Game Day Grill Website &middot; October 2023 - January
+                    2024
+                  </h6>
+                  <ul style="text-align: left">
+                    <li>
+                      Built a website for a hypothetical grilling company,
+                      including a mock online payment flow and animations —
+                      largest BPA project completed; see the Projects section
+                      below for a video walkthrough.
+                    </li>
+                  </ul>
+
+                  <h6 style="text-align: left; color: #fff; padding: 5px 0 0">
+                    StageFright Website &middot; October 2024 - March 2025
+                  </h6>
+                  <ul style="text-align: left">
+                    <li>
+                      Developed an interactive website for a fictional rock
+                      band using HTML, CSS, JavaScript, and Vue, designing
+                      responsive layouts and animations that earned 1st Place
+                      at the BPA Regional Competition.
+                    </li>
+                  </ul>
+                </div>
+                <div style="flex: 0 0 300px; max-width: 100%">
+                  <img
+                    src="assets/img/experience/bpa-awards.jpeg"
+                    class="img-fluid"
+                    alt="Advait and teammates receiving BPA competition awards"
+                    style="border-radius: 8px"
+                  />
+                </div>
+              </div>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h4 style="text-align: left">
-                <a
-                  href="https://www.meditab.com/"
-                  target="_blank"
-                  style="color: #12d640"
-                  >UIL Computer Science</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">August 2023 - May 2024</h5>
-              <p style="text-align: left; color: #fff">
-                <em>Programmer</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Java programming Club that I am particiapting in. In the 2nd
-                  semester, myself and two others will compete to showcase our
-                  skills in Java
-                </li>
-              </ul>
-            </div>
-            <div
-              class="col-md-12 mt-4 mt-md-0 icon-box"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <h4 style="text-align: left">
-                <a
-                  href="https://www.sac.gov.in/Vyom/index.jsp"
-                  target="_blank"
-                  style="color: #12d640"
-                  >AP Computer Science A</a
-                ><br />
-              </h4>
-              <h5 style="text-align: left">August 2023 - Present</h5>
-              <p style="text-align: left; color: #fff">
-                <em>Student</em>
-              </p>
-              <ul style="text-align: left">
-                <li>
-                  Taking this class currently as a junior. This class is
-                  entirely about Java.
-                </li>
-                <li>
-                  Throughout the class, I have been creating projects and
-                  completing live demonstrations to show my learning of Java.
-                </li>
-                <li>
-                  Since I have been doing Java so much in recent times, Java is
-                  now the language I am strongest in, alongside web languages
-                  like HTML and CSS.
-                </li>
-              </ul>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 24px;
+                  align-items: flex-start;
+                "
+              >
+                <div style="flex: 1 1 320px">
+                  <h4 style="text-align: left">
+                    <span style="color: #12d640">UIL Computer Science</span
+                    ><br />
+                  </h4>
+                  <h5 style="text-align: left">August 2023 - May 2025</h5>
+                  <p style="text-align: left; color: #fff">
+                    <em>Programmer</em>
+                  </p>
+                  <ul style="text-align: left">
+                    <li>
+                      Competed on a Java programming team, working with two
+                      teammates to solve programming problems under contest
+                      conditions.
+                    </li>
+                    <li>Won the District Championship in March 2025.</li>
+                  </ul>
+                </div>
+                <div style="flex: 0 0 300px; max-width: 100%">
+                  <img
+                    src="assets/img/experience/uil-logo.svg"
+                    class="img-fluid"
+                    alt="UIL (University Interscholastic League) logo"
+                    style="
+                      border-radius: 8px;
+                      background: #fff;
+                      padding: 20px;
+                    "
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -672,7 +701,7 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="section-title">
-          <h2>Projects</h2>
+          <h2>More cool stuf I did</h2>
         </div>
 
         <!-- <div class="row">
@@ -687,179 +716,80 @@
 
         <div class="row portfolio-container">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <center><h4>Weather API App</h4></center>
+            <center><h4>Hybrid Search Engine</h4></center>
             <div class="portfolio-wrap">
-              <img
-                src="https://media.istockphoto.com/id/1124567572/vector/cute-flat-sun-icon.jpg?s=612x612&w=0&k=20&c=_ekkRvw-dX-3Dt-jH3tG8wonvYJ1NrBHEAEDFm4cGVc="
+              <div
                 class="img-fluid"
-                alt=""
-              />
-              <!-- <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a
-                    href="projects/twitteranalysis.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <center><h4>JAVA Adventure Game</h4></center>
-            <div class="portfolio-wrap">
-              <img
-                src="https://inventwithpython.com/blogstatic/esotera.png?27f655"
-                class="img-fluid"
-                alt=""
-              />
-              <!-- <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a
-                    href="projects/iras.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <center><h4>Python Arcade Game</h4></center>
-            <div class="portfolio-wrap">
-              <img
-                src="data:image/png;base64,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"
-                class="img-fluid"
-                alt=""
-              />
-              <!-- <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a
-                    href="projects/musicplayer.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <center><h4>Used Car Website</h4></center>
-            <div class="portfolio-wrap">
-              <img
-                src="https://carfax-img.vast.com/carfax/v2/-6639275690516911080/1/344x258"
-                class="img-fluid"
-                alt=""
-              />
-              <!-- <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a
-                    href="projects/recommender.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>To-Do App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/todo.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/todo.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+                style="
+                  height: 220px;
+                  background: linear-gradient(135deg, #12d640, #09203a);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="bx bx-search-alt"
+                  style="font-size: 56px; color: #fff"
+                ></i>
               </div>
-            </div>
-          </div>
-        </div> -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <!-- <br> -->
-            <center><h4>Game Day Grill Website</h4></center>
-            <div class="portfolio-wrap">
-              <img
-                src="https://images.template.net/wp-content/uploads/2018/02/Grill-Restaurant-Menu-Template.png"
-                class="img-fluid"
-                alt=""
-              />
-              <!-- <div class="portfolio-info">
-                <h4>Resume Section Classifier</h4>
-                <div class="portfolio-links">
-                  <a
-                    href="projects/resume.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
-                  ></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <br>
-          <center><h4>Tech Blog</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/blog.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <center><h4>Video Description Generator</h4></center>
-            <div class="portfolio-wrap">
-              <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="" />
               <div class="portfolio-info">
+                <h4>Hybrid Search Engine</h4>
+                <p>Python &middot; FastAPI &middot; OpenSearch</p>
                 <div class="portfolio-links">
                   <a
-                    href="projects/vdg.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
+                    href="https://github.com/advaitmannepalli/hybrid-search"
+                    target="_blank"
+                    title="View on GitHub"
+                    ><i class="bx bxl-github"></i
                   ></a>
                 </div>
               </div>
             </div>
           </div>
 
-         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <center><h4>ML-DL Web-App</h4></center>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>1 on 1 Truck Academy</h4></center>
             <div class="portfolio-wrap">
-              <img src="assets/img/project/ml.jpg" class="img-fluid" alt="" />
+              <img
+                src="assets/img/experience/1on1-logo.jpg"
+                class="img-fluid"
+                alt="1 on 1 Truck Academy logo"
+                style="height: 220px; width: 100%; object-fit: cover"
+              />
               <div class="portfolio-info">
+                <h4>1 on 1 Truck Academy</h4>
+                <p>Vue.js &middot; SEO &middot; Web Migration</p>
                 <div class="portfolio-links">
                   <a
-                    href="projects/ml.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
-                    class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
+                    href="https://1on1truckacademy.com"
+                    target="_blank"
+                    title="Visit Site"
+                    ><i class="bx bx-link-external"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>StageFright Website</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/stagefright.jpg"
+                class="img-fluid"
+                alt="StageFright band website screenshot"
+                style="height: 220px; width: 100%; object-fit: cover"
+              />
+              <div class="portfolio-info">
+                <h4>StageFright Website</h4>
+                <p>HTML &middot; CSS &middot; JavaScript &middot; Vue.js</p>
+                <div class="portfolio-links">
+                  <a
+                    href="https://github.com/StageFright-HHS/BPA2025"
+                    target="_blank"
+                    title="View on GitHub"
+                    ><i class="bx bxl-github"></i
                   ></a>
                 </div>
               </div>
@@ -867,24 +797,29 @@
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-             <br> 
-            <center><h4>Image Generator</h4></center>
+            <center><h4>Game Day Grill</h4></center>
             <div class="portfolio-wrap">
-              <img src="assets/img/project/gan.jpg" class="img-fluid" alt="" />
+              <img
+                src="assets/img/project/gameday-grill.jpg"
+                class="img-fluid"
+                alt="Game Day Grill website demo video thumbnail"
+                style="height: 220px; width: 100%; object-fit: cover"
+              />
               <div class="portfolio-info">
+                <h4>Game Day Grill</h4>
+                <p>HTML &middot; CSS &middot; JavaScript</p>
                 <div class="portfolio-links">
                   <a
-                    href="projects/gan.html"
-                    data-gall="portfolioDetailsGallery"
-                    data-vbtype="iframe"
+                    href="https://www.youtube.com/watch?v=AKQ0UXen-pE"
                     class="venobox"
-                    title="Project Details"
-                    ><i class="bx bx-info-circle"></i
+                    data-vbtype="video"
+                    title="Watch Demo"
+                    ><i class="bx bx-play-circle"></i
                   ></a>
                 </div>
               </div>
             </div>
-          </div>  -->
+          </div>
         </div>
       </div>
     </section>
@@ -896,7 +831,7 @@
     <section id="skills" class="services">
       <div class="container">
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>Things I'm good at</h2>
         </div>
         <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
@@ -904,126 +839,46 @@
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="fade-up"
               data-aos-delay="100"
-              style="background: #fff"
             >
-              <h4 style="text-align: left; color: #09203a">
-                Languages and Databases
-              </h4>
+              <h4 style="text-align: left">Programming Languages</h4>
               <p style="text-align: left">
-                <img
-                  src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg"
-                  alt="vectorlogo.zone"
-                  height="50"
-                  width="150"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"
-                  alt="vectorlogo.zone"
-                  height="50"
-                  width="120"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                  alt="upload.wikimedia.org"
-                  height="60"
-                  width="90"
-                />
-                <img
-                  src="https://assets-global.website-files.com/601064f495f4b4967f921aa9/632b60f8c1aa184a0e5766d9_202209-ms-sql-icon-3x.png"
-                  alt="vectorlogo.zone"
-                  height="70"
-                  width="130"
-                />
-                <img
-                  src="https://cdn.icon-icons.com/icons2/2699/PNG/512/javascript_logo_icon_168608.png"
-                  alt="upload.wikimedia.org"
-                  height="60"
-                  width="90"
-                />
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg"
-                  alt="vectorlogo.zone"
-                  height="50"
-                  width="190"
-                /> -->
+                <span class="skill-pill">Rust</span>
+                <span class="skill-pill">C</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">SQL</span>
               </p>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="lefade-up"
               data-aos-delay="100"
-              style="background: #fff"
             >
-              <h4 style="text-align: left; color: #09203a">Frameworks</h4>
+              <h4 style="text-align: left">Technologies</h4>
               <p style="text-align: left">
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"
-                  alt="vectorlogo.zone"
-                /> -->
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"
-                  alt="vectorlogo.zone"
-                /> -->
-                <img
-                  src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
-                  alt="upload.wikimedia.org"
-                  width="90"
-                  height="70"
-                /> -->
+                <span class="skill-pill">OpenSearch</span>
+                <span class="skill-pill">Git</span>
+                <span class="skill-pill">AWS</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">WordPress</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">FastAPI</span>
               </p>
             </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="lefade-up"
               data-aos-delay="100"
-              style="background: #fff"
             >
-              <h4 style="text-align: left; color: #09203a">Tools</h4>
+              <h4 style="text-align: left">Frameworks &amp; Libraries</h4>
               <p style="text-align: left">
-                <img
-                  src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg"
-                  alt="vectorlogo.zone"
-                /> -->
-                <img
-                  src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
+                <span class="skill-pill">BeautifulSoup4</span>
+                <span class="skill-pill">PyTorch</span>
+                <span class="skill-pill">Pytesseract</span>
+                <span class="skill-pill">Sentence Transformers</span>
+                <span class="skill-pill">Vue.js</span>
+                <span class="skill-pill">Sanic</span>
               </p>
             </div>
           </div>
@@ -1046,13 +901,13 @@
             data-aos-delay="100"
           >
             <a
-              href="https://docs.google.com/document/d/1-wgyNP6HO3yaeLVBanj17QKfH2667fd0INBDiFuYleE/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1Ml2fFTfaFgCw_pr72pTW9juF541L7ltT-j7mOTINrB4/edit?usp=sharing"
               target="_blank"
               ><div class="icon"><i class="icofont-page"></i></div
             ></a>
             <h4 class="title">
               <a
-                href="https://docs.google.com/document/d/1-wgyNP6HO3yaeLVBanj17QKfH2667fd0INBDiFuYleE/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1Ml2fFTfaFgCw_pr72pTW9juF541L7ltT-j7mOTINrB4/edit?usp=sharing"
                 target="_blank"
                 >Resume</a
               >
@@ -1062,28 +917,35 @@
             </p>
           </div>
           <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-            <a
-              href="https://github.com/advaitmannepalli/LeetCode_Problems"
-              target="_blank"
+            <a href="https://github.com/advaitmannepalli" target="_blank"
               ><div class="icon"><i class="icofont-link"></i></div
             ></a>
             <h4 class="title">
-              <a
-                href="https://github.com/advaitmannepalli/LeetCode_Problems"
-                target="_blank"
-                >LeetCode Repository</a
+              <a href="https://github.com/advaitmannepalli" target="_blank"
+                >GitHub</a
               >
             </h4>
             <p class="description" style="color: #fff">
-              The github repository contains leetcode problems solution in
-              python.
+              Source code for my projects, including the Hybrid Search Engine.
             </p>
           </div>
-          <!-- <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://techingenious.herokuapp.com/" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://techingenious.herokuapp.com/" target="_blank">Blog</a></h4>
-          <p class="description" style="color:#fff;">Blog containing articles on AI, coding, development</p>
-        </div> -->
+          <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
+            <a
+              href="https://www.linkedin.com/in/advait-mannepalli-20797a28b/"
+              target="_blank"
+              ><div class="icon"><i class="icofont-page"></i></div
+            ></a>
+            <h4 class="title">
+              <a
+                href="https://www.linkedin.com/in/advait-mannepalli-20797a28b/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </h4>
+            <p class="description" style="color: #fff">
+              Connect with me or view my full professional history.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -1094,7 +956,18 @@
     <section id="contacts" class="contact">
       <div class="container">
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2>How to contact me (please email at first though)</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-7 text-center" data-aos="fade-up">
+            <img
+              src="assets/img/contact-outdoors.jpeg"
+              class="img-fluid"
+              alt="Advait outdoors at Pedernales Falls, Texas"
+              style="border-radius: 8px; max-height: 320px; object-fit: cover"
+            />
+          </div>
         </div>
 
         <div class="row mt-2">
@@ -1102,7 +975,7 @@
             <div class="info-box">
               <i class="bx bx-map"></i>
               <h3>Located</h3>
-              <p>Pflugerville</p>
+              <p>Austin</p>
               <p>Texas</p>
             </div>
           </div>
@@ -1138,15 +1011,14 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email</h3>
-              <p>advaitmannepalli@gmail.com (preferred)</p>
-              <p>amannepalli2@gmail.com</p>
+              <p>advaitmannepalli@gmail.com</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 d-flex align-items-stretch">
             <div class="info-box">
               <i class="bx bx-phone-call"></i>
-              <h3>Contact</h3>
-              <p>Use email addresses provided</p>
+              <h3>Phone</h3>
+              <p>916-257-5104</p>
             </div>
           </div>
         </div>
@@ -1169,7 +1041,12 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script type="text/javascript">
       var typed = new Typed(".typing", {
-        strings: ["Coder", "Web Developer", "Programmer"],
+        strings: [
+          "Systems Engineer",
+          "Full-Stack Developer",
+          "CS Student @ UT Austin",
+          "Minecraft Guy",
+        ],
         loop: true,
         typeSpeed: 65,
         backSpeed: 65,
