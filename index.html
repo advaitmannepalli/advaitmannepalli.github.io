@@ -107,13 +107,7 @@
         <img
           src="assets/img/avatar.png"
           alt="Advait's avatar"
-          style="
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            display: block;
-            margin-bottom: 10px;
-          "
+          class="header-avatar"
         />
         <h1><a href="index.html">Advait Mannepalli</a></h1>
         <h2 style="color: #fff">
@@ -328,8 +322,9 @@
                 src="assets/img/education/ut-longhorn.png"
                 alt="University of Texas at Austin logo"
                 style="
-                  width: 340px;
-                  height: 191px;
+                  width: 100%;
+                  max-width: 340px;
+                  aspect-ratio: 340 / 191;
                   object-fit: contain;
                   object-position: left center;
                 "
@@ -360,7 +355,12 @@
               <img
                 src="assets/img/education/HHS.png"
                 alt="Hendrickson High School logo"
-                style="width: 240px; height: 240px; object-fit: contain"
+                style="
+                  width: 100%;
+                  max-width: 240px;
+                  aspect-ratio: 1 / 1;
+                  object-fit: contain;
+                "
               />
               <p style="text-align: left; color: #fff; padding: 10px 0 0">
                 <em>Hendrickson High School</em>

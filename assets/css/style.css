@@ -94,6 +94,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+#header .header-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 0 10px 0;
+  object-fit: cover;
+}
+
 #header .social-links {
   margin-top: 40px;
   display: flex;
@@ -279,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #09203a;
 }
 
-#header.header-top .social-links, #header.header-top h2 {
+#header.header-top .social-links, #header.header-top h2, #header.header-top .header-avatar {
   display: none;
 }
 
@@ -344,7 +353,7 @@ section .container {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  line-height: 1.4;
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
