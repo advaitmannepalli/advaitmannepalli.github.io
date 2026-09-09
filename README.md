@@ -25,8 +25,7 @@ python3 -m http.server
 
 Then open `http://localhost:8000`.
 
-## License
-
-[MIT](http://opensource.org/licenses/mit-license.php)
+## Credit
+The layout of the site is not my design, it was taken from a free to use GitHub repo, but I can no longer find it anymore.
 
 <!-- trigger rebuild -->
