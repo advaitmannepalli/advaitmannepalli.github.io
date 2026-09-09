@@ -487,6 +487,30 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 575px) {
+  .interests-grid {
+    gap: 12px;
+  }
+
+  .interests .interests-grid .icon-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .interests .interests-grid .icon-box h3 {
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -742,6 +766,13 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio .portfolio-item > center h4 {
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1104,4 +1135,26 @@ section .container {
     right: 0;
     transform: translateX(-50%);
   }
+}
+
+/* Stack contact details with consistent card dimensions. */
+.contact .contact-blocks {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  margin-top: 24px !important;
+}
+
+.contact .contact-blocks > div {
+  max-width: 100%;
+  margin-top: 0 !important;
+}
+
+.contact .contact-blocks .info-box {
+  min-height: 136px;
+}
+
+.contact .contact-blocks .info-box p {
+  overflow-wrap: anywhere;
 }

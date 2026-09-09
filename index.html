@@ -67,6 +67,8 @@
       }
     </style>
 
+    <link href="assets/css/graph-paper.css" rel="stylesheet" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -208,12 +210,12 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <p>
               CS and Minecraft nerd at The University of Texas at Austin with
-              interests in backend engineering, systems programming,
-              information retrieval, machine learning, operating systems, and
-              computer architecture. I've shipped production sites
-              end-to-end — from frontend UI and backend APIs to hosting, DNS,
-              and SEO — and I'm currently learning Rust and digging into
-              hybrid search.
+              interests in systems programming, machine learning, and quantitative
+              finance. I've shipped production sites end-to-end — from frontend UI
+              and backend APIs to hosting, DNS, and SEO — and I'm learning about
+              system design through CS439. Additionally, I'm also drawn to
+              quantitative finance: backtesting and building infrastructure that
+              trading and risk systems are built on.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -221,6 +223,14 @@
                   <li>
                     <i class="icofont-rounded-right"></i>
                     <strong>School:</strong> UT Austin, B.S. Computer Science
+                  </li>
+                  <li>
+                    <i class="icofont-rounded-right"></i>
+                    <a href="https://github.com/advaitmannepalli" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong></a>
+                  </li>
+                  <li>
+                    <i class="icofont-rounded-right"></i>
+                    <a href="https://www.linkedin.com/in/advait-mannepalli-20797a28b/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong></a>
                   </li>
                 </ul>
               </div>
@@ -237,6 +247,7 @@
                 </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -248,49 +259,25 @@
           <h2>Interests</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <i class="ri-server-line" style="color: #5578ff"></i>
-              <h3>Backend Software Engineering</h3>
-            </div>
+        <div class="interests-grid">
+          <div class="icon-box">
+            <i class="ri-terminal-box-line" style="color: #1c7d32" aria-hidden="true"></i>
+            <h3>Systems Programming</h3>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-terminal-box-line" style="color: #1c7d32"></i>
-              <h3>Systems Programming</h3>
-            </div>
+          <div class="icon-box">
+            <i class="ri-robot-line" style="color: #e80368" aria-hidden="true"></i>
+            <h3>Machine Learning</h3>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="ri-search-line" style="color: #ffbb2c"></i>
-              <h3>Information Retrieval</h3>
-            </div>
+          <div class="icon-box">
+            <i class="ri-bar-chart-line" style="color: #47aeff" aria-hidden="true"></i>
+            <h3>Quantitative Finance</h3>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-robot-line" style="color: #e80368"></i>
-              <h3>Machine Learning</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-computer-line" style="color: #47aeff"></i>
-              <h3>Operating Systems</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4">
-            <div class="icon-box">
-              <i class="ri-cpu-line" style="color: #ffc107"></i>
-              <h3>Computer Architecture</h3>
-            </div>
+          <div class="icon-box">
+            <i class="ri-search-line" style="color: #ffbb2c" aria-hidden="true"></i>
+            <h3>Information Retrieval</h3>
           </div>
         </div>
+
       </div>
       <!-- End Interests -->
     </section>
@@ -711,24 +698,31 @@
         </div> -->
 
         <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <center><h4>Portfolio Risk &amp; Monte Carlo Simulator</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="monte_carlo_simulation.png"
+                class="img-fluid"
+                alt="Portfolio risk Monte Carlo simulation chart"
+                style="height: 220px; width: 100%; object-fit: contain; background: #fff"
+              />
+              <div class="portfolio-info">
+                <h4>Portfolio Risk &amp; Monte Carlo Simulator</h4>
+                <p>Python, Pandas, Numpy, yFinance</p>
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <center><h4>Hybrid Search Engine</h4></center>
             <div class="portfolio-wrap">
-              <div
+              <img
+                src="assets/img/project/super-search-3000.png"
                 class="img-fluid"
-                style="
-                  height: 220px;
-                  background: linear-gradient(135deg, #12d640, #09203a);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <i
-                  class="bx bx-search-alt"
-                  style="font-size: 56px; color: #fff"
-                ></i>
-              </div>
+                alt="Super Search 3000 hybrid search engine homepage"
+                style="height: 220px; width: 100%; object-fit: cover"
+              />
               <div class="portfolio-info">
                 <h4>Hybrid Search Engine</h4>
                 <p>Python &middot; FastAPI &middot; OpenSearch</p>
@@ -855,10 +849,8 @@
               <p style="text-align: left">
                 <span class="skill-pill">OpenSearch</span>
                 <span class="skill-pill">Git</span>
-                <span class="skill-pill">AWS</span>
                 <span class="skill-pill">PostgreSQL</span>
                 <span class="skill-pill">WordPress</span>
-                <span class="skill-pill">REST APIs</span>
                 <span class="skill-pill">FastAPI</span>
               </p>
             </div>
@@ -869,6 +861,9 @@
             >
               <h4 style="text-align: left">Frameworks &amp; Libraries</h4>
               <p style="text-align: left">
+                <span class="skill-pill">yfinance</span>
+                <span class="skill-pill">pandas</span>
+                <span class="skill-pill">numpy</span>
                 <span class="skill-pill">BeautifulSoup4</span>
                 <span class="skill-pill">PyTorch</span>
                 <span class="skill-pill">Pytesseract</span>
@@ -955,7 +950,7 @@
           <h2>Contact</h2>
         </div>
 
-        <p style="text-align: center; color: #fff; margin-bottom: 20px">
+        <p style="text-align: center; margin-bottom: 20px">
           Email is the best way to reach me — I'll get back to you quickly.
         </p>
 
@@ -970,7 +965,7 @@
           </div>
         </div>
 
-        <div class="row mt-2">
+        <div class="row mt-2 contact-blocks">
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="info-box">
               <i class="bx bx-map"></i>
@@ -1042,10 +1037,11 @@
     <script type="text/javascript">
       var typed = new Typed(".typing", {
         strings: [
-          "Systems Engineer",
-          "Full-Stack Developer",
           "CS Student @ UT Austin",
-          "Minecraft Guy",
+          "Systems Engineer",
+          "Aspiring Quant",
+          "Full-Stack Developer",
+          "Minecraft Nerd",
         ],
         loop: true,
         typeSpeed: 65,
