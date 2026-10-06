@@ -138,7 +138,7 @@
             </li>
             <li>
               <a
-                href="mannepalliTechnicalResume2.pdf"
+                href="mannepalliTechnicalResumeUT.pdf"
                 target="_blank"
               >
                 <span>Resume</span></a
@@ -213,9 +213,10 @@
               interests in systems programming, machine learning, and quantitative
               finance. I've shipped production sites end-to-end — from frontend UI
               and backend APIs to hosting, DNS, and SEO — and I'm learning about
-              system design through CS439. Additionally, I'm also drawn to
-              quantitative finance: backtesting and building infrastructure that
-              trading and risk systems are built on.
+              system design through CS439. Additionally, via my CS439 class, I've
+              become interested in systems engineering. I've been enjoying working
+              on multithreaded problems, synchronization, and understanding how
+              the kernel works.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -857,6 +858,23 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <button
+              type="button"
+              class="project-modal-card"
+              data-toggle="modal"
+              data-target="#pintos-lab-1-modal"
+              aria-haspopup="dialog"
+              aria-controls="pintos-lab-1-modal"
+            >
+              <span class="project-modal-title">Pintos Lab 1</span>
+              <span class="project-modal-art">
+                <i class="ri-cpu-line" aria-hidden="true"></i>
+                <span>View implementation details</span>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -937,13 +955,13 @@
             data-aos-delay="100"
           >
             <a
-              href="mannepalliTechnicalResume2.pdf"
+              href="mannepalliTechnicalResumeUT.pdf"
               target="_blank"
               ><div class="icon"><i class="icofont-page"></i></div
             ></a>
             <h4 class="title">
               <a
-                href="mannepalliTechnicalResume2.pdf"
+                href="mannepalliTechnicalResumeUT.pdf"
                 target="_blank"
                 >Resume</a
               >
@@ -1067,6 +1085,61 @@
     </section>
 
     <!-- End Contact Section -->
+
+    <div class="modal fade" id="pintos-lab-1-modal" tabindex="-1" role="dialog" aria-labelledby="pintos-lab-1-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="pintos-lab-1-title">Pintos Lab 1</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Extended the Pintos teaching operating system in C with non-busy-wait sleeping,
+              priority-aware scheduling and synchronization, and lock-based priority inheritance.
+            </p>
+            <ol>
+              <li>
+                Reworked Pintos’s timer sleep mechanism to eliminate busy waiting by blocking
+                sleeping threads, tracking per-thread wake times, and waking them from the timer
+                interrupt when their sleep interval expires.
+              </li>
+              <li>
+                Modified the scheduler to maintain ready threads in priority order and immediately
+                preempt the running thread when a higher-priority thread becomes ready.
+              </li>
+              <li>
+                Extended semaphore and condition-variable synchronization so the highest-priority
+                waiting thread is awakened first rather than relying on FIFO ordering.
+              </li>
+              <li>
+                Implemented priority inheritance by associating donation state with locks and
+                recomputing a thread’s effective priority from the locks it currently owns,
+                including cases with multiple simultaneous donations.
+              </li>
+              <li>
+                Implemented nested priority donation through a pointer-based dependency chain,
+                allowing inherited priority to propagate across threads blocked on locks held
+                by other blocked threads.
+              </li>
+              <li>
+                Added synchronization around shared scheduler and timer state, including
+                interrupt-safe sleep-list updates to prevent lost wakeups and race conditions.
+              </li>
+            </ol>
+            <p class="mt-3 mb-0">
+              Sorry, no GitHub repo link for this one — course rules prevent
+              sharing the source code publicly.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>

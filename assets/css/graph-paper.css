@@ -95,3 +95,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .portfolio .portfolio-wrap .portfolio-links a:hover { color: #b9d9ff; }
 .contact .info-box i.bx { color: var(--accent); background: #e4eefb; }
 .contact .info-box .social-links a { color: var(--accent); }
+
+/* Clickable project card and matching implementation dialog. */
+.project-modal-card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.project-modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4em;
+  margin-bottom: 8px;
+  font: 500 24px/1.2 "Raleway", sans-serif;
+}
+.project-modal-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 220px;
+  border: 1px solid var(--paper-border);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #245ba0, #20344b);
+  color: #fff;
+}
+.project-modal-art i { font-size: 56px; }
+.project-modal-card:hover .project-modal-art,
+.project-modal-card:focus-visible .project-modal-art { background: #20344b; }
+#pintos-lab-1-modal .modal-content { background: #f8fafc; color: var(--ink); }
+#pintos-lab-1-modal .modal-body { line-height: 1.7; }
+#pintos-lab-1-modal .modal-body ol { padding-left: 24px; margin-bottom: 0; }
+#pintos-lab-1-modal .modal-body li + li { margin-top: 16px; }
+#pintos-lab-1-modal .btn-primary { background: var(--accent); border-color: var(--accent); }
